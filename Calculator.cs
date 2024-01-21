@@ -82,5 +82,41 @@ namespace Calculator
         {
             textBox1.Text = textBox1.Text + ",";
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            double dn, res;
+
+            dn = Convert.ToDouble(textBox1.Text);
+            res = Math.Sqrt(dn);
+            textBox1.Text = res.ToString();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            double dn, res;
+
+            dn = Convert.ToDouble(textBox1.Text);
+            res = Math.Pow(dn, 2);
+            textBox1.Text = res.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            double dn, res;
+
+            dn = Convert.ToDouble(textBox1.Text);
+            res = 1/dn;
+            textBox1.Text = res.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double dn, res;
+
+            dn = Convert.ToDouble(textBox1.Text);
+            res = -dn;
+            textBox1.Text = res.ToString();
+        }
     }
 }
